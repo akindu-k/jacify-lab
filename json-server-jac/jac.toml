@@ -1,0 +1,8 @@
+[project]
+name = "json-server-jac"
+
+[test]
+directories = ["."]
+
+[fmt]
+exclude = [".agents/*"]

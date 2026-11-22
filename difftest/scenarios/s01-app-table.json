@@ -1,0 +1,156 @@
+{
+ "requests": [
+  {
+   "method": "GET",
+   "path": "/"
+  },
+  {
+   "method": "GET",
+   "path": "/test.html"
+  },
+  {
+   "method": "GET",
+   "path": "/file.txt"
+  },
+  {
+   "method": "OPTIONS",
+   "path": "/posts"
+  },
+  {
+   "method": "GET",
+   "path": "/posts"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_embed=comments"
+  },
+  {
+   "method": "GET",
+   "path": "/posts/1"
+  },
+  {
+   "method": "GET",
+   "path": "/posts/-1"
+  },
+  {
+   "method": "GET",
+   "path": "/posts/1?_embed=comments"
+  },
+  {
+   "method": "GET",
+   "path": "/comments"
+  },
+  {
+   "method": "GET",
+   "path": "/comments?postId=1"
+  },
+  {
+   "method": "GET",
+   "path": "/object"
+  },
+  {
+   "method": "GET",
+   "path": "/object/1"
+  },
+  {
+   "method": "GET",
+   "path": "/not-found"
+  },
+  {
+   "method": "POST",
+   "path": "/posts"
+  },
+  {
+   "method": "POST",
+   "path": "/posts/1"
+  },
+  {
+   "method": "POST",
+   "path": "/posts/-1"
+  },
+  {
+   "method": "POST",
+   "path": "/object"
+  },
+  {
+   "method": "POST",
+   "path": "/object/1"
+  },
+  {
+   "method": "POST",
+   "path": "/not-found"
+  },
+  {
+   "method": "PUT",
+   "path": "/posts"
+  },
+  {
+   "method": "PUT",
+   "path": "/posts/1"
+  },
+  {
+   "method": "PUT",
+   "path": "/object"
+  },
+  {
+   "method": "PUT",
+   "path": "/object/1"
+  },
+  {
+   "method": "PUT",
+   "path": "/posts/-1"
+  },
+  {
+   "method": "PUT",
+   "path": "/not-found"
+  },
+  {
+   "method": "PATCH",
+   "path": "/posts"
+  },
+  {
+   "method": "PATCH",
+   "path": "/posts/1"
+  },
+  {
+   "method": "PATCH",
+   "path": "/object"
+  },
+  {
+   "method": "PATCH",
+   "path": "/object/1"
+  },
+  {
+   "method": "PATCH",
+   "path": "/posts/-1"
+  },
+  {
+   "method": "PATCH",
+   "path": "/not-found"
+  },
+  {
+   "method": "DELETE",
+   "path": "/posts"
+  },
+  {
+   "method": "DELETE",
+   "path": "/posts/1"
+  },
+  {
+   "method": "DELETE",
+   "path": "/object"
+  },
+  {
+   "method": "DELETE",
+   "path": "/object/1"
+  },
+  {
+   "method": "DELETE",
+   "path": "/posts/-1"
+  },
+  {
+   "method": "DELETE",
+   "path": "/not-found"
+  }
+ ]
+}

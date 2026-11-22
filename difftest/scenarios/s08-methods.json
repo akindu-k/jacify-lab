@@ -1,0 +1,136 @@
+{
+ "requests": [
+  {
+   "method": "TRACE",
+   "path": "/posts"
+  },
+  {
+   "method": "TRACE",
+   "path": "/posts/1"
+  },
+  {
+   "method": "TRACE",
+   "path": "/"
+  },
+  {
+   "method": "TRACE",
+   "path": "/test.html"
+  },
+  {
+   "method": "PROPFIND",
+   "path": "/posts"
+  },
+  {
+   "method": "PROPFIND",
+   "path": "/posts/1"
+  },
+  {
+   "method": "PROPFIND",
+   "path": "/"
+  },
+  {
+   "method": "PROPFIND",
+   "path": "/test.html"
+  },
+  {
+   "method": "PURGE",
+   "path": "/posts"
+  },
+  {
+   "method": "PURGE",
+   "path": "/posts/1"
+  },
+  {
+   "method": "PURGE",
+   "path": "/"
+  },
+  {
+   "method": "PURGE",
+   "path": "/test.html"
+  },
+  {
+   "method": "SEARCH",
+   "path": "/posts"
+  },
+  {
+   "method": "SEARCH",
+   "path": "/posts/1"
+  },
+  {
+   "method": "SEARCH",
+   "path": "/"
+  },
+  {
+   "method": "SEARCH",
+   "path": "/test.html"
+  },
+  {
+   "method": "REPORT",
+   "path": "/posts"
+  },
+  {
+   "method": "REPORT",
+   "path": "/posts/1"
+  },
+  {
+   "method": "REPORT",
+   "path": "/"
+  },
+  {
+   "method": "REPORT",
+   "path": "/test.html"
+  },
+  {
+   "method": "MKCOL",
+   "path": "/posts"
+  },
+  {
+   "method": "MKCOL",
+   "path": "/posts/1"
+  },
+  {
+   "method": "MKCOL",
+   "path": "/"
+  },
+  {
+   "method": "MKCOL",
+   "path": "/test.html"
+  },
+  {
+   "method": "UNLOCK",
+   "path": "/posts"
+  },
+  {
+   "method": "UNLOCK",
+   "path": "/posts/1"
+  },
+  {
+   "method": "UNLOCK",
+   "path": "/"
+  },
+  {
+   "method": "UNLOCK",
+   "path": "/test.html"
+  },
+  {
+   "method": "QUERY",
+   "path": "/posts"
+  },
+  {
+   "method": "QUERY",
+   "path": "/posts/1"
+  },
+  {
+   "method": "QUERY",
+   "path": "/"
+  },
+  {
+   "method": "QUERY",
+   "path": "/test.html"
+  },
+  {
+   "method": "FOOBAR",
+   "path": "/posts"
+  }
+ ]
+}

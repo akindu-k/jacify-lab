@@ -1,0 +1,17 @@
+// json5 database
+{
+  $schema: './node_modules/json-server/schema.json',
+  posts: [
+    {id: '1', title: 'Hello World', views: 100, published: true, author: {name: 'typicode'}, userId: 'u1'},
+    {id: '2', title: "it's \"quoted\"", views: 0x10, ratio: .5, inf: Infinity, userId: 'u2',},
+    {id: 3, title: 'line\
+continued', tags: ['a', 'b',],},
+    {title: 'no id', 'quoted-key': 1, $dollar: 2, _under: 3, 'é': 'unicode key'},
+  ],
+  comments: [
+    {id: '1', text: 'c1', postId: '1'},
+    /* block */ {id: '2', text: 'c2', postId: '2'},
+  ],
+  users: [{id: 'u1', name: 'Una'}, {id: 'u2', name: 'Ugo'}],
+  profile: {name: 'typicode', "1": 'one'},
+}

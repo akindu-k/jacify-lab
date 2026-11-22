@@ -1,0 +1,624 @@
+neojac: fetching TypeScript 6.0.3, which reads JavaScript's types
+src/adapters/normalized-adapter.test.ts:1:20: error[tsc TS2591]: Cannot find name 'node:assert/strict'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 1 | import assert from 'node:assert/strict'
+   |                    ^
+
+src/adapters/normalized-adapter.test.ts:2:18: error[tsc TS2591]: Cannot find name 'node:test'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 2 | import test from 'node:test'
+   |                  ^
+
+src/adapters/normalized-adapter.test.ts:4:30: error[tsc TS2307]: Cannot find module 'lowdb' or its corresponding type declarations.
+ 4 | import type { Adapter } from 'lowdb'
+   |                              ^
+
+src/adapters/normalized-adapter.test.ts:6:56: error[tsc TS2307]: Cannot find module './adapters/normalized-adapter.ts' or its corresponding type declarations.
+ 6 | import { DEFAULT_SCHEMA_PATH, NormalizedAdapter } from './adapters/normalized-adapter.ts'
+   |                                                        ^
+
+src/adapters/normalized-adapter.test.ts:7:30: error[tsc TS2307]: Cannot find module './adapters/normalized-adapter.ts' or its corresponding type declarations.
+ 7 | import type { RawData } from './adapters/normalized-adapter.ts'
+   |                              ^
+
+src/adapters/normalized-adapter.test.ts:8:27: error[tsc TS2307]: Cannot find module './service.ts' or its corresponding type declarations.
+ 8 | import type { Data } from './service.ts'
+   |                           ^
+
+src/adapters/normalized-adapter.test.ts:18:41: error[tsc TS2304]: Cannot find name 'structuredClone'.
+ 18 |     return this.#data === null ? null : structuredClone(this.#data)
+    |                                         ^
+
+src/adapters/normalized-adapter.test.ts:22:18: error[tsc TS2304]: Cannot find name 'structuredClone'.
+ 22 |     this.#data = structuredClone(data)
+    |                  ^
+
+src/adapters/normalized-adapter.test.ts:30:1: error[tsc TS1309]: The current file is a CommonJS module and cannot use 'await' at the top level.
+ 30 | await test('read removes $schema and normalizes ids', async () => {
+    | ^
+
+src/adapters/normalized-adapter.test.ts:54:1: error[tsc TS1309]: The current file is a CommonJS module and cannot use 'await' at the top level.
+ 54 | await test('write always overwrites $schema', async () => {
+    | ^
+
+src/adapters/normalized-adapter.ts:1:30: error[tsc TS2307]: Cannot find module 'lowdb' or its corresponding type declarations.
+ 1 | import type { Adapter } from 'lowdb'
+   |                              ^
+
+src/adapters/normalized-adapter.ts:3:26: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 3 | import { randomId } from '../random-id.ts'
+   |                          ^
+
+src/adapters/observer.ts:1:30: error[tsc TS2307]: Cannot find module 'lowdb' or its corresponding type declarations.
+ 1 | import type { Adapter } from 'lowdb'
+   |                              ^
+
+src/app.test.ts:1:23: error[tsc TS2591]: Cannot find name 'node:assert/strict'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 1 |    import assert from 'node:assert/strict'
+   |                       ^
+
+src/app.test.ts:2:31: error[tsc TS2591]: Cannot find name 'node:fs'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 2 | import { writeFileSync } from 'node:fs'
+   |                               ^
+
+src/app.test.ts:3:22: error[tsc TS2591]: Cannot find name 'node:path'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 3 | import { join } from 'node:path'
+   |                      ^
+
+src/app.test.ts:4:18: error[tsc TS2591]: Cannot find name 'node:test'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 4 | import test from 'node:test'
+   |                  ^
+
+src/app.test.ts:6:21: error[tsc TS2307]: Cannot find module 'get-port' or its corresponding type declarations.
+ 6 | import getPort from 'get-port'
+   |                     ^
+
+src/app.test.ts:7:29: error[tsc TS2307]: Cannot find module 'lowdb' or its corresponding type declarations.
+ 7 | import { Low, Memory } from 'lowdb'
+   |                             ^
+
+src/app.test.ts:8:36: error[tsc TS2307]: Cannot find module 'tempy' or its corresponding type declarations.
+ 8 | import { temporaryDirectory } from 'tempy'
+   |                                    ^
+
+src/app.test.ts:10:27: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 10 | import { createApp } from './app.ts'
+    |                           ^
+
+src/app.test.ts:21:14: error[tsc TS1309]: The current file is a CommonJS module and cannot use 'await' at the top level.
+ 21 | const port = await getPort()
+    |              ^
+
+src/app.test.ts:37:1: error[tsc TS1309]: The current file is a CommonJS module and cannot use 'await' at the top level.
+ 37 | await new Promise<void>((resolve, reject) => {
+    | ^
+
+src/app.test.ts:46:1: error[tsc TS1309]: The current file is a CommonJS module and cannot use 'await' at the top level.
+ 46 | await test('createApp', async (t) => {
+    | ^
+
+src/app.test.ts:46:32: error[tsc TS7006]: Parameter 't' implicitly has an 'any' type.
+ 46 | await test('createApp', async (t) => {
+    |                                ^
+
+src/app.test.ts:111:30: error[tsc TS2304]: Cannot find name 'fetch'.
+ 111 |       const response = await fetch(`http://localhost:${port}${tc.url}`, {
+     |                              ^
+
+src/app.test.ts:134:28: error[tsc TS2304]: Cannot find name 'fetch'.
+ 134 |     const response = await fetch(`http://localhost:${port}/posts?_where=${where}`)
+     |                            ^
+
+src/app.test.ts:142:28: error[tsc TS2304]: Cannot find name 'fetch'.
+ 142 |     const response = await fetch(
+     |                            ^
+
+src/app.test.ts:151:28: error[tsc TS2304]: Cannot find name 'fetch'.
+ 151 |     const response = await fetch(`http://localhost:${port}/posts`, {
+     |                            ^
+
+src/app.test.ts:162:28: error[tsc TS2304]: Cannot find name 'fetch'.
+ 162 |     const response = await fetch(`http://localhost:${port}/posts/1`, {
+     |                            ^
+
+src/app.test.ts:173:28: error[tsc TS2304]: Cannot find name 'fetch'.
+ 173 |     const response = await fetch(`http://localhost:${port}/posts/1`, {
+     |                            ^
+
+src/app.ts:1:43: error[tsc TS2591]: Cannot find name 'node:path'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 1 | import { dirname, isAbsolute, join } from 'node:path'
+   |                                           ^
+
+src/app.ts:2:31: error[tsc TS2591]: Cannot find name 'node:url'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 2 | import { fileURLToPath } from 'node:url'
+   |                               ^
+
+src/app.ts:4:21: error[tsc TS2307]: Cannot find module '@tinyhttp/app' or its corresponding type declarations.
+ 4 | import { App } from '@tinyhttp/app'
+   |                     ^
+
+src/app.ts:5:22: error[tsc TS2307]: Cannot find module '@tinyhttp/cors' or its corresponding type declarations.
+ 5 | import { cors } from '@tinyhttp/cors'
+   |                      ^
+
+src/app.ts:6:21: error[tsc TS2307]: Cannot find module 'eta' or its corresponding type declarations.
+ 6 | import { Eta } from 'eta'
+   |                     ^
+
+src/app.ts:7:21: error[tsc TS2307]: Cannot find module 'lowdb' or its corresponding type declarations.
+ 7 | import { Low } from 'lowdb'
+   |                     ^
+
+src/app.ts:8:22: error[tsc TS2307]: Cannot find module 'milliparsec' or its corresponding type declarations.
+ 8 | import { json } from 'milliparsec'
+   |                      ^
+
+src/app.ts:9:18: error[tsc TS2307]: Cannot find module 'sirv' or its corresponding type declarations.
+ 9 | import sirv from 'sirv'
+   |                  ^
+
+src/app.ts:11:28: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 11 | import { parseWhere } from './parse-where.ts'
+    |                            ^
+
+src/app.ts:13:33: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 13 | import { isItem, Service } from './service.ts'
+    |                                 ^
+
+src/app.ts:15:41: error[tsc TS1470]: The 'import.meta' meta-property is not allowed in files which will build into CommonJS output.
+ 15 | const __dirname = dirname(fileURLToPath(import.meta.url))
+    |                                         ^
+
+src/app.ts:15:53: error[tsc TS2339]: Property 'url' does not exist on type 'ImportMeta'.
+ 15 | const __dirname = dirname(fileURLToPath(import.meta.url))
+    |                                                     ^
+
+src/app.ts:16:22: error[tsc TS2591]: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 16 | const isProduction = process.env['NODE_ENV'] === 'production'
+    |                      ^
+
+src/app.ts:32:22: error[tsc TS2304]: Cannot find name 'URLSearchParams'.
+ 32 |   const params = new URLSearchParams(queryString)
+    |                      ^
+
+src/app.ts:34:28: error[tsc TS2304]: Cannot find name 'URLSearchParams'.
+ 34 |   const filterParams = new URLSearchParams()
+    |                            ^
+
+src/app.ts:104:53: error[tsc TS2591]: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 104 |     ?.map((path) => (isAbsolute(path) ? path : join(process.cwd(), path)))
+     |                                                     ^
+
+src/app.ts:109:11: error[tsc TS7006]: Parameter 'req' implicitly has an 'any' type.
+ 109 |     .use((req, res, next) => {
+     |           ^
+
+src/app.ts:109:16: error[tsc TS7006]: Parameter 'res' implicitly has an 'any' type.
+ 109 |     .use((req, res, next) => {
+     |                ^
+
+src/app.ts:109:21: error[tsc TS7006]: Parameter 'next' implicitly has an 'any' type.
+ 109 |     .use((req, res, next) => {
+     |                     ^
+
+src/app.ts:113:17: error[tsc TS7006]: Parameter 'h' implicitly has an 'any' type.
+ 113 |           .map((h) => h.trim()),
+     |                 ^
+
+src/app.ts:121:17: error[tsc TS7006]: Parameter '_req' implicitly has an 'any' type.
+ 121 |   app.get('/', (_req, res) => res.send(eta.render('index.html', { data: db.data })))
+     |                 ^
+
+src/app.ts:121:23: error[tsc TS7006]: Parameter 'res' implicitly has an 'any' type.
+ 121 |   app.get('/', (_req, res) => res.send(eta.render('index.html', { data: db.data })))
+     |                       ^
+
+src/app.ts:123:22: error[tsc TS7006]: Parameter 'req' implicitly has an 'any' type.
+ 123 |   app.get('/:name', (req, res, next) => {
+     |                      ^
+
+src/app.ts:123:27: error[tsc TS7006]: Parameter 'res' implicitly has an 'any' type.
+ 123 |   app.get('/:name', (req, res, next) => {
+     |                           ^
+
+src/app.ts:123:32: error[tsc TS7006]: Parameter 'next' implicitly has an 'any' type.
+ 123 |   app.get('/:name', (req, res, next) => {
+     |                                ^
+
+src/app.ts:137:26: error[tsc TS7006]: Parameter 'req' implicitly has an 'any' type.
+ 137 |   app.get('/:name/:id', (req, res, next) => {
+     |                          ^
+
+src/app.ts:137:31: error[tsc TS7006]: Parameter 'res' implicitly has an 'any' type.
+ 137 |   app.get('/:name/:id', (req, res, next) => {
+     |                               ^
+
+src/app.ts:137:36: error[tsc TS7006]: Parameter 'next' implicitly has an 'any' type.
+ 137 |   app.get('/:name/:id', (req, res, next) => {
+     |                                    ^
+
+src/app.ts:153:35: error[tsc TS7006]: Parameter 'req' implicitly has an 'any' type.
+ 153 |   app.delete('/:name/:id', async (req, res, next) => {
+     |                                   ^
+
+src/app.ts:153:40: error[tsc TS7006]: Parameter 'res' implicitly has an 'any' type.
+ 153 |   app.delete('/:name/:id', async (req, res, next) => {
+     |                                        ^
+
+src/app.ts:153:45: error[tsc TS7006]: Parameter 'next' implicitly has an 'any' type.
+ 153 |   app.delete('/:name/:id', async (req, res, next) => {
+     |                                             ^
+
+src/app.ts:159:22: error[tsc TS7006]: Parameter 'req' implicitly has an 'any' type.
+ 159 |   app.use('/:name', (req, res) => {
+     |                      ^
+
+src/app.ts:159:27: error[tsc TS7006]: Parameter 'res' implicitly has an 'any' type.
+ 159 |   app.use('/:name', (req, res) => {
+     |                           ^
+
+src/bin.ts:2:57: error[tsc TS2591]: Cannot find name 'node:fs'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 2 | import { existsSync, readFileSync, writeFileSync } from "node:fs";
+   |                                                         ^
+
+src/bin.ts:3:25: error[tsc TS2591]: Cannot find name 'node:path'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 3 | import { extname } from "node:path";
+   |                         ^
+
+src/bin.ts:4:27: error[tsc TS2591]: Cannot find name 'node:util'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 4 | import { parseArgs } from "node:util";
+   |                           ^
+
+src/bin.ts:6:19: error[tsc TS2307]: Cannot find module 'chalk' or its corresponding type declarations.
+ 6 | import chalk from "chalk";
+   |                   ^
+
+src/bin.ts:7:23: error[tsc TS2307]: Cannot find module 'chokidar' or its corresponding type declarations.
+ 7 | import { watch } from "chokidar";
+   |                       ^
+
+src/bin.ts:8:19: error[tsc TS2307]: Cannot find module 'json5' or its corresponding type declarations.
+ 8 | import JSON5 from "json5";
+   |                   ^
+
+src/bin.ts:9:21: error[tsc TS2307]: Cannot find module 'lowdb' or its corresponding type declarations.
+ 9 | import { Low } from "lowdb";
+   |                     ^
+
+src/bin.ts:10:30: error[tsc TS2307]: Cannot find module 'lowdb' or its corresponding type declarations.
+ 10 | import type { Adapter } from "lowdb";
+    |                              ^
+
+src/bin.ts:11:36: error[tsc TS2307]: Cannot find module 'lowdb/node' or its corresponding type declarations.
+ 11 | import { DataFile, JSONFile } from "lowdb/node";
+    |                                    ^
+
+src/bin.ts:12:34: error[tsc TS2307]: Cannot find module 'type-fest' or its corresponding type declarations.
+ 12 | import type { PackageJson } from "type-fest";
+    |                                  ^
+
+src/bin.ts:14:31: error[tsc TS2591]: Cannot find name 'node:url'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 14 | import { fileURLToPath } from "node:url";
+    |                               ^
+
+src/bin.ts:15:35: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 15 | import { NormalizedAdapter } from "./adapters/normalized-adapter.ts";
+    |                                   ^
+
+src/bin.ts:17:26: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 17 | import { Observer } from "./adapters/observer.ts";
+    |                          ^
+
+src/bin.ts:18:27: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 18 | import { createApp } from "./app.ts";
+    |                           ^
+
+src/bin.ts:34:18: error[tsc TS2366]: Function lacks ending return statement and return type does not include 'undefined'.
+ 34 | function args(): {
+    |                  ^
+
+src/bin.ts:46:20: error[tsc TS2591]: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 46 |           default: process.env["PORT"] ?? "3000",
+    |                    ^
+
+src/bin.ts:51:20: error[tsc TS2591]: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 51 |           default: process.env["HOST"] ?? "localhost",
+    |                    ^
+
+src/bin.ts:77:40: error[tsc TS2304]: Cannot find name 'URL'.
+ 77 |         readFileSync(fileURLToPath(new URL("../package.json", import.meta.url)), "utf-8"),
+    |                                        ^
+
+src/bin.ts:77:63: error[tsc TS1470]: The 'import.meta' meta-property is not allowed in files which will build into CommonJS output.
+ 77 |         readFileSync(fileURLToPath(new URL("../package.json", import.meta.url)), "utf-8"),
+    |                                                               ^
+
+src/bin.ts:77:75: error[tsc TS2339]: Property 'url' does not exist on type 'ImportMeta'.
+ 77 |         readFileSync(fileURLToPath(new URL("../package.json", import.meta.url)), "utf-8"),
+    |                                                                           ^
+
+src/bin.ts:80:7: error[tsc TS2591]: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 80 |       process.exit();
+    |       ^
+
+src/bin.ts:94:7: error[tsc TS2591]: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 94 |       process.exit();
+    |       ^
+
+src/bin.ts:105:15: error[tsc TS2503]: Cannot find namespace 'NodeJS'.
+ 105 |     if ((e as NodeJS.ErrnoException).code === "ERR_PARSE_ARGS_UNKNOWN_OPTION") {
+     |               ^
+
+src/bin.ts:106:35: error[tsc TS2503]: Cannot find namespace 'NodeJS'.
+ 106 |       console.log(chalk.red((e as NodeJS.ErrnoException).message.split(".")[0]));
+     |                                   ^
+
+src/bin.ts:108:7: error[tsc TS2591]: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 108 |       process.exit(1);
+     |       ^
+
+src/bin.ts:119:3: error[tsc TS2591]: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 119 |   process.exit(1);
+     |   ^
+
+src/bin.ts:140:1: error[tsc TS1309]: The current file is a CommonJS module and cannot use 'await' at the top level.
+ 140 | await db.read();
+     | ^
+
+src/bin.ts:186:5: error[tsc TS2591]: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 186 | if (process.env["NODE_ENV"] !== "production") {
+     |     ^
+
+src/bin.ts:205:54: error[tsc TS2769]: No overload matches this call.
+  Overload 1 of 2, '(o: {}): string[]', gave the following error.
+    Argument of type '{} | undefined' is not assignable to parameter of type '{}'.
+      Type 'undefined' is not assignable to type '{}'.
+  Overload 2 of 2, '(o: object): string[]', gave the following error.
+    Argument of type '{} | undefined' is not assignable to parameter of type 'object'.
+      Type 'undefined' is not assignable to type 'object'.
+ 205 |     const nextEndpoints = JSON.stringify(Object.keys(data).sort());
+     |                                                      ^
+
+src/bin.ts:208:17: error[tsc TS2345]: Argument of type '{} | undefined' is not assignable to parameter of type 'Data'.
+  Type 'undefined' is not assignable to type 'Data'.
+ 208 |       logRoutes(data);
+     |                 ^
+
+src/bin.ts:215:24: error[tsc TS7006]: Parameter 'e' implicitly has an 'any' type.
+ 215 |       db.read().catch((e) => {
+     |                        ^
+
+src/matches-where.test.ts:1:20: error[tsc TS2591]: Cannot find name 'node:assert/strict'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 1 | import assert from 'node:assert/strict'
+   |                    ^
+
+src/matches-where.test.ts:2:18: error[tsc TS2591]: Cannot find name 'node:test'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 2 | import test from 'node:test'
+   |                  ^
+
+src/matches-where.test.ts:4:33: error[tsc TS2307]: Cannot find module 'type-fest' or its corresponding type declarations.
+ 4 | import type { JsonObject } from 'type-fest'
+   |                                 ^
+
+src/matches-where.test.ts:6:30: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 6 | import { matchesWhere } from './matches-where.ts'
+   |                              ^
+
+src/matches-where.test.ts:8:1: error[tsc TS1309]: The current file is a CommonJS module and cannot use 'await' at the top level.
+ 8 | await test('matchesWhere', async (t) => {
+   | ^
+
+src/matches-where.test.ts:8:35: error[tsc TS7006]: Parameter 't' implicitly has an 'any' type.
+ 8 | await test('matchesWhere', async (t) => {
+   |                                   ^
+
+src/matches-where.ts:1:33: error[tsc TS2307]: Cannot find module 'type-fest' or its corresponding type declarations.
+ 1 | import type { JsonObject } from 'type-fest'
+   |                                 ^
+
+src/matches-where.ts:3:53: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 3 | import { WHERE_OPERATORS, type WhereOperator } from './where-operators.ts'
+   |                                                     ^
+
+src/paginate.test.ts:1:20: error[tsc TS2591]: Cannot find name 'node:assert/strict'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 1 | import assert from 'node:assert/strict'
+   |                    ^
+
+src/paginate.test.ts:2:18: error[tsc TS2591]: Cannot find name 'node:test'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 2 | import test from 'node:test'
+   |                  ^
+
+src/paginate.test.ts:4:26: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 4 | import { paginate } from './paginate.ts'
+   |                          ^
+
+src/paginate.test.ts:6:1: error[tsc TS1309]: The current file is a CommonJS module and cannot use 'await' at the top level.
+ 6 | await test('paginate', async (t) => {
+   | ^
+
+src/paginate.test.ts:6:31: error[tsc TS7006]: Parameter 't' implicitly has an 'any' type.
+ 6 | await test('paginate', async (t) => {
+   |                               ^
+
+src/parse-where.test.ts:1:20: error[tsc TS2591]: Cannot find name 'node:assert/strict'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 1 | import assert from 'node:assert/strict'
+   |                    ^
+
+src/parse-where.test.ts:2:18: error[tsc TS2591]: Cannot find name 'node:test'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 2 | import test from 'node:test'
+   |                  ^
+
+src/parse-where.test.ts:4:28: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 4 | import { parseWhere } from './parse-where.ts'
+   |                            ^
+
+src/parse-where.test.ts:6:1: error[tsc TS1309]: The current file is a CommonJS module and cannot use 'await' at the top level.
+ 6 | await test('parseWhere', async (t) => {
+   | ^
+
+src/parse-where.test.ts:6:33: error[tsc TS7006]: Parameter 't' implicitly has an 'any' type.
+ 6 | await test('parseWhere', async (t) => {
+   |                                 ^
+
+src/parse-where.ts:1:29: error[tsc TS2307]: Cannot find module 'dot-prop' or its corresponding type declarations.
+ 1 | import { setProperty } from 'dot-prop'
+   |                             ^
+
+src/parse-where.ts:2:33: error[tsc TS2307]: Cannot find module 'type-fest' or its corresponding type declarations.
+ 2 | import type { JsonObject } from 'type-fest'
+   |                                 ^
+
+src/parse-where.ts:4:53: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 4 | import { isWhereOperator, type WhereOperator } from './where-operators.ts'
+   |                                                     ^
+
+src/parse-where.ts:60:22: error[tsc TS2304]: Cannot find name 'URLSearchParams'.
+ 60 |   const params = new URLSearchParams(query)
+    |                      ^
+
+src/random-id.ts:1:29: error[tsc TS2591]: Cannot find name 'node:crypto'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 1 | import { randomBytes } from 'node:crypto'
+   |                             ^
+
+src/service.test.ts:1:20: error[tsc TS2591]: Cannot find name 'node:assert/strict'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 1 | import assert from 'node:assert/strict'
+   |                    ^
+
+src/service.test.ts:2:34: error[tsc TS2591]: Cannot find name 'node:test'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 2 | import test, { beforeEach } from 'node:test'
+   |                                  ^
+
+src/service.test.ts:4:29: error[tsc TS2307]: Cannot find module 'lowdb' or its corresponding type declarations.
+ 4 | import { Low, Memory } from 'lowdb'
+   |                             ^
+
+src/service.test.ts:5:33: error[tsc TS2307]: Cannot find module 'type-fest' or its corresponding type declarations.
+ 5 | import type { JsonObject } from 'type-fest'
+   |                                 ^
+
+src/service.test.ts:8:25: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 8 | import { Service } from './service.ts'
+   |                         ^
+
+src/service.test.ts:52:13: error[tsc TS2304]: Cannot find name 'structuredClone'.
+ 52 |   db.data = structuredClone({
+    |             ^
+
+src/service.test.ts:59:1: error[tsc TS1309]: The current file is a CommonJS module and cannot use 'await' at the top level.
+ 59 | await test('findById', () => {
+    | ^
+
+src/service.test.ts:73:1: error[tsc TS1309]: The current file is a CommonJS module and cannot use 'await' at the top level.
+ 73 | await test('find', async (t) => {
+    | ^
+
+src/service.test.ts:73:27: error[tsc TS7006]: Parameter 't' implicitly has an 'any' type.
+ 73 | await test('find', async (t) => {
+    |                           ^
+
+src/service.test.ts:102:1: error[tsc TS1309]: The current file is a CommonJS module and cannot use 'await' at the top level.
+ 102 | await test('create', async () => {
+     | ^
+
+src/service.test.ts:114:1: error[tsc TS1309]: The current file is a CommonJS module and cannot use 'await' at the top level.
+ 114 | await test('update', async () => {
+     | ^
+
+src/service.test.ts:127:1: error[tsc TS1309]: The current file is a CommonJS module and cannot use 'await' at the top level.
+ 127 | await test('patch', async () => {
+     | ^
+
+src/service.test.ts:140:1: error[tsc TS1309]: The current file is a CommonJS module and cannot use 'await' at the top level.
+ 140 | await test('updateById', async () => {
+     | ^
+
+src/service.test.ts:150:1: error[tsc TS1309]: The current file is a CommonJS module and cannot use 'await' at the top level.
+ 150 | await test('patchById', async () => {
+     | ^
+
+src/service.test.ts:161:1: error[tsc TS1309]: The current file is a CommonJS module and cannot use 'await' at the top level.
+ 161 | await test('destroy', async (t) => {
+     | ^
+
+src/service.test.ts:161:30: error[tsc TS7006]: Parameter 't' implicitly has an 'any' type.
+ 161 | await test('destroy', async (t) => {
+     |                              ^
+
+src/service.ts:1:24: error[tsc TS2307]: Cannot find module 'inflection' or its corresponding type declarations.
+ 1 | import inflection from 'inflection'
+   |                        ^
+
+src/service.ts:2:21: error[tsc TS2307]: Cannot find module 'lowdb' or its corresponding type declarations.
+ 2 | import { Low } from 'lowdb'
+   |                     ^
+
+src/service.ts:3:20: error[tsc TS2307]: Cannot find module 'sort-on' or its corresponding type declarations.
+ 3 | import sortOn from 'sort-on'
+   |                    ^
+
+src/service.ts:4:33: error[tsc TS2307]: Cannot find module 'type-fest' or its corresponding type declarations.
+ 4 | import type { JsonObject } from 'type-fest'
+   |                                 ^
+
+src/service.ts:6:30: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 6 | import { matchesWhere } from './matches-where.ts'
+   |                              ^
+
+src/service.ts:7:49: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 7 | import { paginate, type PaginationResult } from './paginate.ts'
+   |                                                 ^
+
+src/service.ts:8:26: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 8 | import { randomId } from './random-id.ts'
+   |                          ^
+
+src/paginate.ts:1:1: error[E4001]: port does not translate JavaScript's `type alias` yet
+ 1 | export type PaginationResult<T> = {
+   | ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/paginate.ts:11:1: error[E4001]: port does not translate a JavaScript generator or a function with type parameters yet
+ 11 | export function paginate<T>(items: T[], page: number, perPage: number): PaginationResult<T> {
+    | ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/paginate.ts:13:23: error[E4001]: port does not translate JavaScript's global 'Number' yet
+ 13 |   const safePerPage = Number.isFinite(perPage) && perPage > 0 ? Math.floor(perPage) : 1
+    |                       ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/paginate.ts:17:20: error[E4001]: port does not translate JavaScript's global 'Number' yet
+ 17 |   const safePage = Number.isFinite(page) ? Math.floor(page) : 1
+    |                    ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/paginate.ts:21:52: error[E4001]: port does not translate JavaScript's `null` yet
+ 21 |   const prev = currentPage > 1 ? currentPage - 1 : null
+    |                                                    ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/paginate.ts:22:56: error[E4001]: port does not translate JavaScript's `null` yet
+ 22 |   const next = currentPage < pages ? currentPage + 1 : null
+    |                                                        ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/paginate.ts:27:16: error[E4001]: port does not translate an array's `slice` yet
+ 27 |   const data = items.slice(start, end)
+    |                ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/paginate.ts:29:10: error[E4001]: port does not translate an object literal that is not typed as a table of one value type (`Record<string, T>`) yet
+ 29 |   return {
+    |          ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/where-operators.ts:14:1: error[E4001]: port does not translate JavaScript's `type alias` yet
+ 14 | export type WhereOperator = (typeof WHERE_OPERATORS)[number]
+    | ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/where-operators.ts:17:10: error[E4001]: port does not translate an array's `includes` yet
+ 17 |   return (WHERE_OPERATORS as readonly string[]).includes(value)
+    |          ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+16 sources refused, nothing written for them
+`neojac docs port` says what port translates and what it refuses.

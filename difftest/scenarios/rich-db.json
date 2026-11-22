@@ -1,0 +1,30 @@
+{
+  "$schema": "./node_modules/json-server/schema.json",
+  "posts": [
+    {"id": "1", "title": "Hello World", "views": 100, "published": true, "author": {"name": "typicode", "age": 30}, "tags": ["a", "b"], "userId": "u1", "ratio": 0.5},
+    {"id": "2", "title": "another title", "views": 200, "published": false, "author": {"name": "alice", "age": 25}, "tags": ["b"], "userId": "u2", "ratio": 1.25},
+    {"id": "3", "title": "Ärger und Öl", "views": "300", "published": true, "author": {"name": "Bob"}, "tags": [], "userId": null},
+    {"id": "4", "title": "zeta", "views": 50, "author": null, "userId": "u1", "ratio": 1e21},
+    {"id": 5, "title": "numeric id", "views": 0, "published": null},
+    {"title": "no id at all", "views": 7},
+    {"id": "7", "title": "B title", "views": 100, "extra": {"deep": {"x": 1}}}
+  ],
+  "comments": [
+    {"id": "1", "text": "c1", "postId": "1"},
+    {"id": "2", "text": "c2", "postId": "1"},
+    {"id": "3", "text": "c3", "postId": "2"},
+    {"id": "4", "text": "orphan", "postId": null},
+    {"id": "5", "text": "numeric fk", "postId": 1}
+  ],
+  "users": [
+    {"id": "u1", "name": "Una"},
+    {"id": "u2", "name": "Ugo"}
+  ],
+  "people": [{"id": "p1", "name": "Pat"}],
+  "profile": {"name": "typicode", "2": "two", "1": "one"},
+  "count": 5,
+  "title": "just a string",
+  "nothing": null,
+  "flag": false,
+  "categories": []
+}

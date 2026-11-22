@@ -1,0 +1,5 @@
+[project]
+name = "served"
+
+[check.lint]
+select = ["style"]

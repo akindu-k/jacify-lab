@@ -1,0 +1,5 @@
+[project]
+name = "spikes"
+
+[check.lint]
+select = ["style"]

@@ -1,0 +1,36 @@
+{
+ "requests": [
+  {
+   "method": "GET",
+   "path": "/posts?_where=%7B%22title%22%3A%20%7B%22eq%22%3A%20%22foo%22%7D%7D"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?title:eq=bar&_where=%7B%22title%22%3A%20%7B%22eq%22%3A%20%22foo%22%7D%7D"
+  },
+  {
+   "method": "POST",
+   "path": "/posts",
+   "body": "[{\"title\": \"foo\"}]",
+   "headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "method": "PATCH",
+   "path": "/posts/1",
+   "body": "\"hello\"",
+   "headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "method": "PUT",
+   "path": "/posts/1",
+   "body": "null",
+   "headers": {
+    "Content-Type": "application/json"
+   }
+  }
+ ]
+}

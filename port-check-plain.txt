@@ -1,0 +1,268 @@
+src/adapters/normalized-adapter.test.ts:1:20: error[tsc TS2591]: Cannot find name 'node:assert/strict'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 1 | import assert from 'node:assert/strict'
+   |                    ^
+
+src/adapters/normalized-adapter.test.ts:2:18: error[tsc TS2591]: Cannot find name 'node:test'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 2 | import test from 'node:test'
+   |                  ^
+
+src/adapters/normalized-adapter.test.ts:6:56: error[tsc TS2307]: Cannot find module './adapters/normalized-adapter.ts' or its corresponding type declarations.
+ 6 | import { DEFAULT_SCHEMA_PATH, NormalizedAdapter } from './adapters/normalized-adapter.ts'
+   |                                                        ^
+
+src/adapters/normalized-adapter.test.ts:7:30: error[tsc TS2307]: Cannot find module './adapters/normalized-adapter.ts' or its corresponding type declarations.
+ 7 | import type { RawData } from './adapters/normalized-adapter.ts'
+   |                              ^
+
+src/adapters/normalized-adapter.test.ts:8:27: error[tsc TS2307]: Cannot find module './service.ts' or its corresponding type declarations.
+ 8 | import type { Data } from './service.ts'
+   |                           ^
+
+src/adapters/normalized-adapter.test.ts:18:41: error[tsc TS2304]: Cannot find name 'structuredClone'.
+ 18 |     return this.#data === null ? null : structuredClone(this.#data)
+    |                                         ^
+
+src/adapters/normalized-adapter.test.ts:22:18: error[tsc TS2304]: Cannot find name 'structuredClone'.
+ 22 |     this.#data = structuredClone(data)
+    |                  ^
+
+src/adapters/normalized-adapter.ts:3:26: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 3 | import { randomId } from '../random-id.ts'
+   |                          ^
+
+src/app.test.ts:10:27: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 10 | import { createApp } from './app.ts'
+    |                           ^
+
+src/app.ts:11:28: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 11 | import { parseWhere } from './parse-where.ts'
+    |                            ^
+
+src/app.ts:13:33: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 13 | import { isItem, Service } from './service.ts'
+    |                                 ^
+
+src/bin.ts:15:35: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 15 | import { NormalizedAdapter } from "./adapters/normalized-adapter.ts";
+    |                                   ^
+
+src/bin.ts:17:26: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 17 | import { Observer } from "./adapters/observer.ts";
+    |                          ^
+
+src/bin.ts:18:27: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 18 | import { createApp } from "./app.ts";
+    |                           ^
+
+src/matches-where.test.ts:1:20: error[tsc TS2591]: Cannot find name 'node:assert/strict'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 1 | import assert from 'node:assert/strict'
+   |                    ^
+
+src/matches-where.test.ts:2:18: error[tsc TS2591]: Cannot find name 'node:test'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 2 | import test from 'node:test'
+   |                  ^
+
+src/matches-where.test.ts:6:30: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 6 | import { matchesWhere } from './matches-where.ts'
+   |                              ^
+
+src/matches-where.test.ts:8:35: error[tsc TS7006]: Parameter 't' implicitly has an 'any' type.
+ 8 | await test('matchesWhere', async (t) => {
+   |                                   ^
+
+src/matches-where.ts:3:53: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 3 | import { WHERE_OPERATORS, type WhereOperator } from './where-operators.ts'
+   |                                                     ^
+
+src/paginate.test.ts:1:20: error[tsc TS2591]: Cannot find name 'node:assert/strict'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 1 | import assert from 'node:assert/strict'
+   |                    ^
+
+src/paginate.test.ts:2:18: error[tsc TS2591]: Cannot find name 'node:test'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 2 | import test from 'node:test'
+   |                  ^
+
+src/paginate.test.ts:4:26: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 4 | import { paginate } from './paginate.ts'
+   |                          ^
+
+src/paginate.test.ts:6:31: error[tsc TS7006]: Parameter 't' implicitly has an 'any' type.
+ 6 | await test('paginate', async (t) => {
+   |                               ^
+
+src/parse-where.test.ts:1:20: error[tsc TS2591]: Cannot find name 'node:assert/strict'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 1 | import assert from 'node:assert/strict'
+   |                    ^
+
+src/parse-where.test.ts:2:18: error[tsc TS2591]: Cannot find name 'node:test'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 2 | import test from 'node:test'
+   |                  ^
+
+src/parse-where.test.ts:4:28: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 4 | import { parseWhere } from './parse-where.ts'
+   |                            ^
+
+src/parse-where.test.ts:6:33: error[tsc TS7006]: Parameter 't' implicitly has an 'any' type.
+ 6 | await test('parseWhere', async (t) => {
+   |                                 ^
+
+src/parse-where.ts:4:53: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 4 | import { isWhereOperator, type WhereOperator } from './where-operators.ts'
+   |                                                     ^
+
+src/parse-where.ts:60:22: error[tsc TS2304]: Cannot find name 'URLSearchParams'.
+ 60 |   const params = new URLSearchParams(query)
+    |                      ^
+
+src/random-id.ts:1:29: error[tsc TS2591]: Cannot find name 'node:crypto'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 1 | import { randomBytes } from 'node:crypto'
+   |                             ^
+
+src/service.test.ts:1:20: error[tsc TS2591]: Cannot find name 'node:assert/strict'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 1 | import assert from 'node:assert/strict'
+   |                    ^
+
+src/service.test.ts:2:34: error[tsc TS2591]: Cannot find name 'node:test'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+ 2 | import test, { beforeEach } from 'node:test'
+   |                                  ^
+
+src/service.test.ts:8:25: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 8 | import { Service } from './service.ts'
+   |                         ^
+
+src/service.test.ts:52:13: error[tsc TS2304]: Cannot find name 'structuredClone'.
+ 52 |   db.data = structuredClone({
+    |             ^
+
+src/service.test.ts:61:24: error[tsc TS7053]: Element implicitly has an 'any' type because expression of type '0' can't be used to index type 'Item[] | Item'.
+  Property '0' does not exist on type 'Item[] | Item'.
+ 61 |     [[POSTS, '1', {}], db.data?.[POSTS]?.[0]],
+    |                        ^
+
+src/service.test.ts:73:27: error[tsc TS7006]: Parameter 't' implicitly has an 'any' type.
+ 73 | await test('find', async (t) => {
+    |                           ^
+
+src/service.test.ts:161:30: error[tsc TS7006]: Parameter 't' implicitly has an 'any' type.
+ 161 | await test('destroy', async (t) => {
+     |                              ^
+
+src/service.ts:6:30: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 6 | import { matchesWhere } from './matches-where.ts'
+   |                              ^
+
+src/service.ts:7:49: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 7 | import { paginate, type PaginationResult } from './paginate.ts'
+   |                                                 ^
+
+src/service.ts:8:26: error[tsc TS5097]: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+ 8 | import { randomId } from './random-id.ts'
+   |                          ^
+
+src/adapters/observer.ts:1:1: error[E4001]: port does not translate JavaScript's `import` yet
+ 1 | import type { Adapter } from 'lowdb'
+   | ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/adapters/observer.ts:4:1: error[E4001]: port does not translate a JavaScript class that extends another, or has type parameters yet
+ 4 | export class Observer<T> {
+   | ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/adapters/observer.ts:5:3: error[E4001]: port does not translate a JavaScript private or computed property yet
+ 5 |   #adapter: Adapter<T>
+   |   ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/adapters/observer.ts:7:17: error[E4001]: port does not translate JavaScript's `function` yet
+ 7 |   onReadStart = function () {
+   |                 ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/adapters/observer.ts:10:41: error[E4001]: port does not translate JavaScript's `function` yet
+ 10 |   onReadEnd: (data: T | null) => void = function () {
+    |                                         ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/adapters/observer.ts:13:18: error[E4001]: port does not translate JavaScript's `function` yet
+ 13 |   onWriteStart = function () {
+    |                  ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/adapters/observer.ts:16:16: error[E4001]: port does not translate JavaScript's `function` yet
+ 16 |   onWriteEnd = function () {
+    |                ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/adapters/observer.ts:24:3: error[E4001]: port does not translate a JavaScript function's async yet
+ 24 |   async read() {
+    |   ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/adapters/observer.ts:26:18: error[E4001]: port does not translate JavaScript's `await` yet
+ 26 |     const data = await this.#adapter.read()
+    |                  ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/adapters/observer.ts:31:3: error[E4001]: port does not translate a JavaScript function's async yet
+ 31 |   async write(arg: T) {
+    |   ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/adapters/observer.ts:33:5: error[E4001]: port does not translate JavaScript's `await` yet
+ 33 |     await this.#adapter.write(arg)
+    |     ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/paginate.ts:1:1: error[E4001]: port does not translate JavaScript's `type alias` yet
+ 1 | export type PaginationResult<T> = {
+   | ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/paginate.ts:11:1: error[E4001]: port does not translate a JavaScript generator or a function with type parameters yet
+ 11 | export function paginate<T>(items: T[], page: number, perPage: number): PaginationResult<T> {
+    | ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/paginate.ts:13:23: error[E4001]: port does not translate JavaScript's global 'Number' yet
+ 13 |   const safePerPage = Number.isFinite(perPage) && perPage > 0 ? Math.floor(perPage) : 1
+    |                       ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/paginate.ts:17:20: error[E4001]: port does not translate JavaScript's global 'Number' yet
+ 17 |   const safePage = Number.isFinite(page) ? Math.floor(page) : 1
+    |                    ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/paginate.ts:21:52: error[E4001]: port does not translate JavaScript's `null` yet
+ 21 |   const prev = currentPage > 1 ? currentPage - 1 : null
+    |                                                    ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/paginate.ts:22:56: error[E4001]: port does not translate JavaScript's `null` yet
+ 22 |   const next = currentPage < pages ? currentPage + 1 : null
+    |                                                        ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/paginate.ts:27:16: error[E4001]: port does not translate an array's `slice` yet
+ 27 |   const data = items.slice(start, end)
+    |                ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/paginate.ts:29:10: error[E4001]: port does not translate an object literal that is not typed as a table of one value type (`Record<string, T>`) yet
+ 29 |   return {
+    |          ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/where-operators.ts:14:1: error[E4001]: port does not translate JavaScript's `type alias` yet
+ 14 | export type WhereOperator = (typeof WHERE_OPERATORS)[number]
+    | ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+src/where-operators.ts:17:10: error[E4001]: port does not translate an array's `includes` yet
+ 17 |   return (WHERE_OPERATORS as readonly string[]).includes(value)
+    |          ^
+    = help: Leave this file in TypeScript and call it from Jac (`neojac docs interop`), or rewrite this part in the mapping's terms (`neojac port --mapping javascript`).
+
+16 sources refused, nothing written for them
+`neojac docs port` says what port translates and what it refuses.

@@ -1,0 +1,513 @@
+{
+ "requests": [
+  {
+   "method": "GET",
+   "path": "/posts?views:gt=100"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?views:gte=100"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?views:lt=100"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?views:lte=100"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?views:eq=100"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?views:ne=100"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?views=100"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?views_gt=100"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?views_lte=50"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?title_eq=zeta"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?title:contains=TITLE"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?title:startsWith=hello"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?title:endsWith=LD"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?title:contains=%C3%B6l"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?id:in=1,3,7"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?id:in=5"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?id_in=2,%204"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?author.name:eq=alice"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?author.age:gt=26"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?author.name:lt=c"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?published=true"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?published:ne=true"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?published=null"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?userId=null"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?views:gt=99&views:lt=201"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?ratio:lt=1"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?ratio:gte=1e21"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?views:gt=abc"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?views:foo=1"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?views:=100"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?title=Hello%20World"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?title=Hello+World"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?missing=1"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?extra.deep.x=1"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?tags.0=a"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?views:in=100,300"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?views:gt=-1&views:lt="
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_sort=views"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_sort=-views"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_sort=title"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_sort=-title"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_sort=author.name,-views"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_sort=published,views"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_sort="
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_sort=nope"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_sort=ratio"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_sort=-userId"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_page=1"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_page=2&_per_page=2"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_page=0&_per_page=3"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_page=99&_per_page=3"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_page=abc"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_page=2&_per_page=abc"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_page=1&_per_page=0"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_page=1.9&_per_page=2.7"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_page=-3"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_page=2&_per_page=1e3"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_per_page=2"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_embed=comments"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_embed=user"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_embed=comments&_embed=user"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_embed=people"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_embed=nope"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_embed=count"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_embed=profile"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_embed=comments&comments.0.text=c1"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_where=%7B%22or%22%3A%20%5B%7B%22views%22%3A%20%7B%22gt%22%3A%20150%7D%7D%2C%20%7B%22author%22%3A%20%7B%22name%22%3A%20%7B%22lt%22%3A%20%22b%22%7D%7D%7D%5D%7D"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_where=%7B%22or%22%3A%20%5B%5D%7D"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_where=%7Bbad%20json"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_where=%5B1%2C2%5D"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_where=%7B%22title%22%3A%20%22zeta%22%7D"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_where=%7B%22views%22%3A%20%7B%22in%22%3A%20100%7D%7D"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_where=5&views=50"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?views:gt=100?x=1&_sort=-views"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?a.b[x]=1"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?a[0=1"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?%E0%A4%A=1"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?views:gt=100&_sort=-views&_page=1&_per_page=1&_embed=comments"
+  },
+  {
+   "method": "GET",
+   "path": "/posts/1?_embed=comments"
+  },
+  {
+   "method": "GET",
+   "path": "/posts/1?_embed=user"
+  },
+  {
+   "method": "GET",
+   "path": "/posts/1?_embed=comments&_embed=user"
+  },
+  {
+   "method": "GET",
+   "path": "/posts/5"
+  },
+  {
+   "method": "GET",
+   "path": "/comments/5?_embed=post"
+  },
+  {
+   "method": "GET",
+   "path": "/comments/4?_embed=post"
+  },
+  {
+   "method": "GET",
+   "path": "/comments?_embed=post"
+  },
+  {
+   "method": "GET",
+   "path": "/posts/1?_embed=count"
+  },
+  {
+   "method": "GET",
+   "path": "/profile"
+  },
+  {
+   "method": "GET",
+   "path": "/profile?x=1"
+  },
+  {
+   "method": "GET",
+   "path": "/count"
+  },
+  {
+   "method": "GET",
+   "path": "/title"
+  },
+  {
+   "method": "GET",
+   "path": "/nothing"
+  },
+  {
+   "method": "GET",
+   "path": "/flag"
+  },
+  {
+   "method": "GET",
+   "path": "/categories"
+  },
+  {
+   "method": "GET",
+   "path": "/categories?_page=1"
+  },
+  {
+   "method": "GET",
+   "path": "/users?_sort=-name"
+  },
+  {
+   "method": "GET",
+   "path": "/people/p1"
+  },
+  {
+   "method": "GET",
+   "path": "/profile/1"
+  },
+  {
+   "method": "GET",
+   "path": "/count/1"
+  },
+  {
+   "method": "GET",
+   "path": "/posts/"
+  },
+  {
+   "method": "GET",
+   "path": "/posts/1/"
+  },
+  {
+   "method": "GET",
+   "path": "/posts//1"
+  },
+  {
+   "method": "GET",
+   "path": "/posts/1/comments"
+  },
+  {
+   "method": "GET",
+   "path": "/posts%2F1"
+  },
+  {
+   "method": "GET",
+   "path": "/POSTS"
+  },
+  {
+   "method": "GET",
+   "path": "/%70osts/1"
+  },
+  {
+   "method": "GET",
+   "path": "/posts/%31"
+  },
+  {
+   "method": "GET",
+   "path": "/posts/%E0%A4%A"
+  },
+  {
+   "method": "GET",
+   "path": "/%ZZ/1"
+  },
+  {
+   "method": "GET",
+   "path": "/a/b/c/d"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_embed=title"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?_embed=categories"
+  },
+  {
+   "method": "GET",
+   "path": "/?x=1"
+  },
+  {
+   "method": "GET",
+   "path": "//"
+  },
+  {
+   "method": "GET",
+   "path": "/posts?views:gt=100#frag"
+  },
+  {
+   "method": "GET",
+   "path": "/",
+   "headers": {
+    "If-None-Match": "W/\"nope\""
+   }
+  },
+  {
+   "method": "HEAD",
+   "path": "/posts"
+  },
+  {
+   "method": "HEAD",
+   "path": "/posts/1"
+  },
+  {
+   "method": "HEAD",
+   "path": "/nope"
+  },
+  {
+   "method": "HEAD",
+   "path": "/"
+  },
+  {
+   "method": "HEAD",
+   "path": "/nothing"
+  },
+  {
+   "method": "HEAD",
+   "path": "/test.html"
+  },
+  {
+   "method": "OPTIONS",
+   "path": "/posts/1",
+   "headers": {
+    "Access-Control-Request-Headers": "X-One,  x-two ,",
+    "Origin": "http://x"
+   }
+  },
+  {
+   "method": "OPTIONS",
+   "path": "/",
+   "headers": {
+    "Access-Control-Request-Headers": ""
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/posts/1",
+   "headers": {
+    "Access-Control-Request-Headers": "x-custom"
+   }
+  }
+ ]
+}

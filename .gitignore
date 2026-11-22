@@ -1,0 +1,22 @@
+# Upstream clones: recreate with the steps in README.md
+upstream-json-server/
+port-plain/
+# neojac build outputs, caches, installed skills and npm trees
+.jac/
+dist/
+node_modules/
+.agents/
+absorb-trial/eco/
+# Differential-test outputs and built binaries
+difftest/work/
+difftest/difftest
+difftest/scenarios/*.ids
+spikes/difftest
+spikes/s1
+spikes/sortcmp
+spikes/sortcmp2
+spikes/e1163
+spikes/lintcheck/w
+spikes/lintcheck/notests
+spikes/served/run*.log
+port-control/clamp

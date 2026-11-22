@@ -1,0 +1,5 @@
+[project]
+name = "l"
+
+[check.lint]
+select = ["style"]

@@ -1,0 +1,249 @@
+{
+ "requests": [
+  {
+   "method": "GET",
+   "path": "/test.html"
+  },
+  {
+   "method": "GET",
+   "path": "/test"
+  },
+  {
+   "method": "GET",
+   "path": "/file.txt"
+  },
+  {
+   "method": "GET",
+   "path": "/site.css"
+  },
+  {
+   "method": "GET",
+   "path": "/data.json"
+  },
+  {
+   "method": "GET",
+   "path": "/sub"
+  },
+  {
+   "method": "GET",
+   "path": "/sub/"
+  },
+  {
+   "method": "GET",
+   "path": "/sub/index.html"
+  },
+  {
+   "method": "GET",
+   "path": "/sub/index"
+  },
+  {
+   "method": "GET",
+   "path": "/about"
+  },
+  {
+   "method": "GET",
+   "path": "/about.html"
+  },
+  {
+   "method": "GET",
+   "path": "/.hidden"
+  },
+  {
+   "method": "GET",
+   "path": "/static/file.txt"
+  },
+  {
+   "method": "GET",
+   "path": "/..%2fpackage.json"
+  },
+  {
+   "method": "GET",
+   "path": "/%2e%2e/test.html"
+  },
+  {
+   "method": "GET",
+   "path": "/file%2Etxt"
+  },
+  {
+   "method": "GET",
+   "path": "/fil%65.txt"
+  },
+  {
+   "method": "GET",
+   "path": "/test.html?x=1"
+  },
+  {
+   "method": "GET",
+   "path": "/sub%2Findex.html"
+  },
+  {
+   "method": "GET",
+   "path": "/%E0%A4%A"
+  },
+  {
+   "method": "GET",
+   "path": "/README"
+  },
+  {
+   "method": "GET",
+   "path": "/bundle.js.gz"
+  },
+  {
+   "method": "GET",
+   "path": "/index"
+  },
+  {
+   "method": "GET",
+   "path": "/index.html"
+  },
+  {
+   "method": "GET",
+   "path": "/nope.css"
+  },
+  {
+   "method": "GET",
+   "path": "/test.html/"
+  },
+  {
+   "method": "GET",
+   "path": "/TEST.HTML"
+  },
+  {
+   "method": "GET",
+   "path": "/asset.js"
+  },
+  {
+   "method": "GET",
+   "path": "/asset.mjs"
+  },
+  {
+   "method": "GET",
+   "path": "/asset.png"
+  },
+  {
+   "method": "GET",
+   "path": "/asset.svg"
+  },
+  {
+   "method": "GET",
+   "path": "/asset.ico"
+  },
+  {
+   "method": "GET",
+   "path": "/asset.woff2"
+  },
+  {
+   "method": "GET",
+   "path": "/asset.map"
+  },
+  {
+   "method": "GET",
+   "path": "/asset.webp"
+  },
+  {
+   "method": "GET",
+   "path": "/asset.wasm"
+  },
+  {
+   "method": "GET",
+   "path": "/asset.md"
+  },
+  {
+   "method": "GET",
+   "path": "/asset.xml"
+  },
+  {
+   "method": "GET",
+   "path": "/asset.csv"
+  },
+  {
+   "method": "GET",
+   "path": "/asset.txt"
+  },
+  {
+   "method": "GET",
+   "path": "/asset.pdf"
+  },
+  {
+   "method": "GET",
+   "path": "/asset.jpg"
+  },
+  {
+   "method": "GET",
+   "path": "/asset.gif"
+  },
+  {
+   "method": "GET",
+   "path": "/asset.zip"
+  },
+  {
+   "method": "HEAD",
+   "path": "/file.txt"
+  },
+  {
+   "method": "POST",
+   "path": "/file.txt"
+  },
+  {
+   "method": "DELETE",
+   "path": "/test.html"
+  },
+  {
+   "method": "OPTIONS",
+   "path": "/file.txt"
+  },
+  {
+   "method": "PUT",
+   "path": "/about"
+  },
+  {
+   "method": "GET",
+   "path": "/file.txt",
+   "headers": {
+    "Range": "bytes=0-3"
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/file.txt",
+   "headers": {
+    "Range": "bytes=2-"
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/file.txt",
+   "headers": {
+    "Range": "bytes=-3"
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/file.txt",
+   "headers": {
+    "Range": "bytes=100-200"
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/file.txt",
+   "headers": {
+    "Range": "bytes=0-0"
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/file.txt",
+   "headers": {
+    "Range": "bytes=3-100"
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/file.txt",
+   "headers": {
+    "Range": "bytes=x-y"
+   }
+  }
+ ]
+}
